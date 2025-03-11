@@ -7,6 +7,7 @@ import Homepage from './routes/Homepage/Homepage.jsx';
 import Createpage from './routes/Createpage/Createpage.jsx';
 import Postpage from './routes/Postpage/Postpage.jsx';
 import Authpage from './routes/Authpage/Authpage.jsx';
+import Searchpage from './routes/Searchpage/Searchpage.jsx';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -17,6 +18,7 @@ createRoot(document.getElementById('root')).render(
         <Route path="/create" element={<Createpage />}></Route>
         <Route path="/post" element={<Postpage />}></Route>
         <Route path="/auth" element={<Authpage />}></Route>
+        <Route path="/search" element={<Searchpage />}></Route>
       </Routes>
     </BrowserRouter>
   </StrictMode>,
