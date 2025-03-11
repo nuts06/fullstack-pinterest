@@ -8,17 +8,23 @@ import Createpage from './routes/Createpage/Createpage.jsx';
 import Postpage from './routes/Postpage/Postpage.jsx';
 import Authpage from './routes/Authpage/Authpage.jsx';
 import Searchpage from './routes/Searchpage/Searchpage.jsx';
+import Profilepage from './routes/Profilepage/Profilepage.jsx';
+import Mainlayout from './routes/Layouts/Mainlayout.jsx';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <BrowserRouter>
       {/* <App /> */}
       <Routes>
-        <Route path="/" element={<Homepage />}></Route>
-        <Route path="/create" element={<Createpage />}></Route>
-        <Route path="/post" element={<Postpage />}></Route>
+        <Route element={<Mainlayout />}>
+          <Route path="/" element={<Homepage />}></Route>
+          <Route path="/create" element={<Createpage />}></Route>
+          <Route path="/post" element={<Postpage />}></Route>
+          <Route path="/search" element={<Searchpage />}></Route>
+          <Route path="/:username" element={<Profilepage />}></Route>
+        </Route>
         <Route path="/auth" element={<Authpage />}></Route>
-        <Route path="/search" element={<Searchpage />}></Route>
+        
       </Routes>
     </BrowserRouter>
   </StrictMode>,
