@@ -1,8 +1,11 @@
 import React from 'react'
 import './searchpage.css'
+import Gallery from '../../components/Gallery/Gallery'
 const Searchpage = () => {
   return (
-    <div className='searchPage'>Searchpage</div>
+    <div className='searchPage'>
+      <Gallery />
+    </div>
   )
 }
 
