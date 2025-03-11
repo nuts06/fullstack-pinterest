@@ -14,7 +14,6 @@ import Mainlayout from './routes/Layouts/Mainlayout.jsx';
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <BrowserRouter>
-      {/* <App /> */}
       <Routes>
         <Route element={<Mainlayout />}>
           <Route path="/" element={<Homepage />}></Route>

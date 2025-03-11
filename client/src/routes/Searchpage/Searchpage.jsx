@@ -4,6 +4,7 @@ import Gallery from '../../components/Gallery/Gallery'
 const Searchpage = () => {
   return (
     <div className='searchPage'>
+      {/* gallery */}
       <Gallery />
     </div>
   )
